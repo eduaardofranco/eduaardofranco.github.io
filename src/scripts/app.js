@@ -1,8 +1,13 @@
 
 $(document).ready(function() {
   var people = new Swiper ('.people-carousel', {
-    freeMode: true,
-    slidesPerView: 3
+    // freeMode: true,
+    slidesPerView: 21,
+    slidesPerGroup: 5,
+    spaceBetween: 5,
+    loop: true,
+    centeredSlides: false
+    
   });
   
   const menuAnchor = $('.menu-anchor');

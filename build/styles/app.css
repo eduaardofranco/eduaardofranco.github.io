@@ -144,6 +144,9 @@ header {
     @media (max-width: 730px) {
       header h1 {
         font-size: 2em; } }
+    @media (max-width: 340px) {
+      header h1 {
+        font-size: 1.5em; } }
   header h3 {
     font-size: 20px;
     margin-top: .5em;
@@ -151,6 +154,10 @@ header {
     @media (max-width: 730px) {
       header h3 {
         font-size: 1.2em; } }
+    @media (max-width: 400px) {
+      header h3 {
+        font-size: 1em;
+        line-height: 1em; } }
   header .introduction {
     position: absolute;
     top: 25%;
@@ -263,8 +270,15 @@ header {
           margin-top: 4.5%;
           margin-left: auto !important;
           margin-right: auto; } }
+    @media (max-width: 400px) {
+      .products .item {
+        width: 100%; } }
     .products .item + .item {
       margin-left: 4.5%; }
+      @media (max-width: 400px) {
+        .products .item + .item {
+          margin-left: 0;
+          margin-top: 4.5%; } }
   .products h2 {
     margin: 20px auto;
     font-weight: 500; }
@@ -400,8 +414,12 @@ header {
     /* IE6-9 */
     right: 0; }
 
+.people .swiper-slide {
+  width: 50px !important; }
+
 .people .person {
-  position: relative; }
+  position: relative;
+  width: 50px; }
   .people .person a {
     display: block; }
   .people .person::after {
