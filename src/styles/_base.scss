@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+  color: $color;
+  font-family: $font-family;
+  font-size: $font;
+}
+* {
+	box-sizing: border-box;
+}
+textarea {
+	resize: none;
+}
+//subtitles
+h2 {
+  color: $black;
+  font-size: 22px;
+}
+//general text
+p.text {
+  color: $grey;
+  font-size: 16px;
+  line-height: 1.7em;
+}
+//input placeholder color
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $grey;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $grey;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $grey;
+}

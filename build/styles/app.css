@@ -1,0 +1,492 @@
+@import url(../../src/fonts/stylesheet.css);
+@import url(../../src/icons/style.css);
+@import url(../../src/styles/swiper.min.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, input, figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+ol, ul {
+  list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a {
+  text-decoration: none; }
+  a:visited {
+    color: #000; }
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  line-height: normal;
+  padding: 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+body {
+  margin: 0px;
+  color: #222222;
+  font-family: "Open Sans";
+  font-size: 14px; }
+
+* {
+  box-sizing: border-box; }
+
+textarea {
+  resize: none; }
+
+h2 {
+  color: #222222;
+  font-size: 22px; }
+
+p.text {
+  color: #848484;
+  font-size: 16px;
+  line-height: 1.7em; }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #848484;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #848484; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #848484; }
+
+.clearfix, .content {
+  zoom: 1; }
+  .clearfix::before, .content::before, .clearfix::after, .content::after {
+    content: '';
+    display: table; }
+  .clearfix::after, .content::after {
+    clear: both; }
+
+.img-full {
+  height: auto;
+  width: 100%; }
+
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.content {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 1180px; }
+  @media (max-width: 1180px) {
+    .content {
+      padding: 0 20px;
+      width: 100%; } }
+
+.hide {
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
+
+header {
+  color: #ffffff; }
+  header h1 {
+    font-size: 3em;
+    font-weight: bold; }
+    @media (max-width: 730px) {
+      header h1 {
+        font-size: 2em; } }
+  header h3 {
+    font-size: 20px;
+    margin-top: .5em;
+    line-height: 1.5em; }
+    @media (max-width: 730px) {
+      header h3 {
+        font-size: 1.2em; } }
+  header .introduction {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -430px; }
+    @media (max-width: 560px) {
+      header .introduction {
+        top: 20px; } }
+    @media (max-width: 900px) {
+      header .introduction {
+        left: 20px;
+        margin-left: 0; } }
+  header .sociais {
+    margin-top: 20px; }
+    @media (max-width: 450px) {
+      header .sociais {
+        margin-top: 10px; } }
+    header .sociais a {
+      -webkit-border-radius: 30px 30px 30px 30px;
+      border-radius: 30px 30px 30px 30px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      display: block;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px; }
+      header .sociais a:hover {
+        background: #2ecc71; }
+        header .sociais a:hover i {
+          color: #ffffff;
+          opacity: 1; }
+    header .sociais li {
+      display: inline-block; }
+      header .sociais li + li {
+        margin-left: .5em; }
+        @media (max-width: 560px) {
+          header .sociais li + li {
+            margin-left: 5px; } }
+    header .sociais i {
+      opacity: .6;
+      color: #ffffff;
+      font-size: 22px; }
+      @media (max-width: 560px) {
+        header .sociais i {
+          font-size: 15px; } }
+  header .menu-anchor {
+    display: none;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    z-index: 10; }
+    @media (max-width: 600px) {
+      header .menu-anchor {
+        display: block; } }
+    header .menu-anchor i {
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 30px; }
+
+.mobile-menu {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: rgba(46, 204, 113, 0.95);
+  display: block;
+  margin: 0;
+  opacity: 0;
+  padding-top: 10%;
+  position: absolute;
+  left: -120%;
+  top: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100%; }
+  .mobile-menu.show {
+    opacity: 100;
+    left: 0; }
+  .mobile-menu li {
+    padding: 6% 0; }
+    .mobile-menu li a {
+      color: #ffffff;
+      display: block;
+      font-size: 2em;
+      text-align: center; }
+    .mobile-menu li + li {
+      border-top: 2px dashed rgba(255, 255, 255, 0.5); }
+  .mobile-menu .icon-close {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right: 5%;
+    top: 5%; }
+
+.products {
+  padding: 80px 0; }
+  .products .item {
+    display: inline-block;
+    text-align: center;
+    width: 30%; }
+    @media (max-width: 785px) {
+      .products .item {
+        width: 45%; }
+        .products .item:last-child {
+          display: block;
+          margin-top: 4.5%;
+          margin-left: auto !important;
+          margin-right: auto; } }
+    .products .item + .item {
+      margin-left: 4.5%; }
+  .products h2 {
+    margin: 20px auto;
+    font-weight: 500; }
+  .products .icon {
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #2ecc71;
+    display: inline-block;
+    padding: 20px; }
+    .products .icon:hover {
+      color: #222222;
+      -moz-transform: rotate(200deg);
+      -webkit-transform: rotate(200deg);
+      -o-transform: rotate(200deg);
+      -ms-transform: rotate(200deg);
+      transform: rotate(200deg); }
+    .products .icon i {
+      color: #ffffff;
+      font-size: 45px; }
+
+.updates {
+  background: #e3e3e3;
+  padding: 60px 0; }
+  .updates h2 {
+    margin-bottom: 25px; }
+  .updates .text-block {
+    float: left;
+    width: 45%; }
+    @media (max-width: 740px) {
+      .updates .text-block {
+        float: none;
+        width: 100%; } }
+  .updates .video {
+    float: right;
+    max-width: 50%; }
+    @media (max-width: 740px) {
+      .updates .video {
+        float: none;
+        margin-top: 7%;
+        text-align: center;
+        max-width: 100%; } }
+    .updates .video img {
+      width: 100%; }
+      @media (max-width: 740px) {
+        .updates .video img {
+          max-width: 500px; } }
+  .updates form {
+    margin-top: 30px; }
+    .updates form input {
+      -webkit-border-radius: 20px 0px 0px 20px;
+      border-radius: 20px 0px 0px 20px;
+      border: 1px solid #c8c8c8;
+      color: #848484;
+      float: left;
+      font-size: 18px;
+      text-indent: 25px;
+      height: 55px;
+      width: 60%; }
+      .updates form input:focus {
+        border-color: #888888; }
+    .updates form button {
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      -webkit-border-radius: 0px 20px 20px 0px;
+      border-radius: 0px 20px 20px 0px;
+      background: #2ecc71;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: 500;
+      height: 55px;
+      width: 30%; }
+      .updates form button:hover {
+        background: #25a25a; }
+
+.coments {
+  padding: 60px 0 30px 0; }
+  .coments p.text {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%; }
+    @media (max-width: 700px) {
+      .coments p.text {
+        width: 95%; } }
+  .coments .name {
+    color: #222222;
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em; }
+
+.people .people-carousel {
+  position: relative;
+  overflow: hidden; }
+  .people .people-carousel::before, .people .people-carousel::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 25px;
+    z-index: 2; }
+  .people .people-carousel::before {
+    background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+    /* IE6-9 */
+    left: 0; }
+  .people .people-carousel::after {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100;White+to+Transparent */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE6-9 */
+    right: 0; }
+
+.people .person {
+  position: relative; }
+  .people .person a {
+    display: block; }
+  .people .person::after {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    content: ''; }
+  .people .person:hover::after {
+    background: #2ecc71;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    opacity: .7;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; }
+  .people .person + .person {
+    margin-left: 6.5px; }
+
+.get-touch {
+  font-size: 24px;
+  padding: 60px 0;
+  text-align: center; }
+  .get-touch h2 {
+    margin-bottom: 20px;
+    font-weight: 600; }
+  .get-touch .sociais {
+    margin-top: 20px; }
+    .get-touch .sociais a {
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      -webkit-border-radius: 40px 40px 40px 40px;
+      border-radius: 40px 40px 40px 40px;
+      display: inline-block;
+      background: #d4d4d4;
+      line-height: 35px;
+      height: 35px;
+      width: 35px; }
+      .get-touch .sociais a:hover {
+        background: #2ecc71; }
+    .get-touch .sociais i {
+      color: #ffffff;
+      font-size: 18px; }
+      .get-touch .sociais i.icon-pinterest, .get-touch .sociais i.icon-linkedin, .get-touch .sociais i.icon-youtube {
+        font-size: 22px; }
+
+footer {
+  background: #e3e3e3;
+  padding: 60px 0; }
+  footer .links {
+    text-align: center; }
+    footer .links li {
+      display: inline; }
+      @media (max-width: 650px) {
+        footer .links li {
+          display: inline-block;
+          margin-bottom: 20px;
+          width: 45%; } }
+      footer .links li + li {
+        margin-left: 40px; }
+        @media (max-width: 650px) {
+          footer .links li + li {
+            margin-left: 0; } }
+      footer .links li a {
+        color: #848484;
+        font-size: 16px;
+        position: relative; }
+        footer .links li a:hover::after {
+          width: 100%; }
+        footer .links li a::after {
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          content: '';
+          background: #848484;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 1px;
+          width: 0; }
